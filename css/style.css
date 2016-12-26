@@ -12,6 +12,10 @@ body {
   font-size: 15px;
 }
 
+.clearfix {
+  clear: both;
+}
+
 /*----- LINKS -----*/
 a:link, a:visited {
   color: #fff;
@@ -21,33 +25,21 @@ a:hover, a:active {
 }
 
 .container {
-  background-color: antiquewhite;
   width: 900px;
   margin: 0 auto;
-}
-
-.content {
-  text-align: center;
-}
-.content .eleh {
-  transition: opacity .2s;
-  width: 100%;
-}
-.content .eleh:hover {
-  opacity: 0.8;
 }
 
 /* ---- HEADER ----*/
 .main-header {
   height: 70px;
-  background-color: aqua;
-  overflow: hidden;
+  background-color: #ffed1a;
 }
 
 .logo {
   float: left;
   line-height: 70px;
   margin: 10px;
+  height: 0;
 }
 
 /*---- NAVBAR ----*/
@@ -58,6 +50,43 @@ nav li {
   display: inline-block;
   line-height: 70px;
   margin-right: 10px;
+}
+
+/*----- ARTICLE -----*/
+.post {
+  width: 70%;
+  float: left;
+}
+.post article {
+  margin-bottom: 10px;
+  margin-right: 1%;
+  border: 1px solid #c1c1c1;
+}
+.post article header {
+  background-color: #c1c1c1;
+  padding: 10px;
+}
+.post article p {
+  padding: 10px;
+}
+
+/*----- aside -----*/
+aside {
+  background-color: #6fa0fb;
+  float: right;
+  width: 29%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #c1c1c1;
+}
+
+/*----- FOOTER-----*/
+footer {
+  background-color: antiquewhite;
+  padding: 20px;
+}
+footer p {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
