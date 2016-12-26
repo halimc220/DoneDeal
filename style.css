@@ -13,3 +13,11 @@
 .content {
     text-align: center;
 }
+
+.content .eleh {
+    transition: opacity .2s;
+}
+
+.content .eleh:hover {
+    opacity: 0.8;
+}
