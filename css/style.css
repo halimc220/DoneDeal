@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.container {
+    background-color: antiquewhite;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    text-align: center;
+}
+.content .eleh {
+    transition: opacity .2s;
+}
+.content .eleh:hover {
+    opacity: 0.8;
+}
+
+/* ---- HEADER ----*/
+.main-header {
+    height: 70px;
+    background-color: aqua;
+}
+
+.logo {
+    float: left;
+    line-height: 70px;
+}
+
+/*---- NAVBAR ----*/
+nav {
+    float: right;
+}
+nav li {
+    display: inline-block;
+    line-height: 70px;
+    margin-right: 10px;
+}
