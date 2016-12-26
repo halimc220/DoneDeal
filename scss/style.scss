@@ -1,15 +1,32 @@
+/* ----- VARIABLES -----*/
+$mainFontSize: 15px;
+
+/*----- Main Rules -----*/
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   list-style: none;
   text-decoration: none;
-  font-size: 15px;
+}
+
+body {
+  font-size: $mainFontSize;
+}
+
+/*----- LINKS -----*/
+a {
+  &:link, &:visited {
+    color: #fff;
+  }
+  &:hover, &:active {
+    color: #6fa0fb;
+  }
 }
 
 .container {
   background-color: antiquewhite;
-  width: 1200px;
+  width: 900px;
   margin: 0 auto;
 }
 
@@ -17,6 +34,7 @@
   text-align: center;
   .eleh {
     transition: opacity .2s;
+    width: 100%;
     &:hover {
       opacity: 0.8;
     }
@@ -24,19 +42,19 @@
 }
 
 /* ---- HEADER ----*/
-
 .main-header {
   height: 70px;
   background-color: aqua;
+  overflow: hidden;
 }
 
 .logo {
   float: left;
   line-height: 70px;
+  margin: 10px;
 }
 
 /*---- NAVBAR ----*/
-
 nav {
   float: right;
   li {
